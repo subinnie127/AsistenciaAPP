@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title #titulo class="ion-text-left ion-text">
+      <div>
+        APP DE ASISTENCIA
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div [fullscreen]="true" class="princi">
+    <ion-card >
+      <div class="imgBase">
+        <img src="./assets/icon/Logo_DuocUC.png" />
+      </div>  
+      <ion-card-header>
+
+        <ion-card-title color="dark">Aplicacion de asistencia</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Registro de asistencia de los estudiantes de la institucion
+      </ion-card-content>  
+
+        <ion-button color="warning" expand="full" shape="round" (click)="goToLogin()">
+          A comenzar la clase
+        </ion-button>
+
+        <ion-button  color="warning" expand="full" shape="round" (click)="goToRecuperarContra()">
+          ¿No recuerdas tu contraseña?
+        </ion-button> 
+        
+        
+        
+    </ion-card>
+  </div>
+</ion-content>
+
+

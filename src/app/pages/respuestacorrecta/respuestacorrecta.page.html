@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Respuesta Correcta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-text-center ion-padding-vertical">
+    <img src="../../../assets/icon/ok.png" alt="block">
+    <ion-card-content>
+      <ion-card-title>
+        <h4 *ngIf="usuario">{{ usuario.nombre }}</h4>
+      </ion-card-title>
+      <ion-label>
+        <h2>Tu Respuesta es Correcta</h2>
+        <h2>Tu contraseña es la siguente:</h2>
+        <br>
+        <h2 *ngIf="usuario">{{ pa }}</h2>
+      </ion-label>
+    </ion-card-content>
+    <ion-button (click)="volverAlInicio()" expand="block" fill="clear" shape="round">
+      Volver Al Inicio
+    </ion-button>
+  </ion-card>
+
+</ion-content>

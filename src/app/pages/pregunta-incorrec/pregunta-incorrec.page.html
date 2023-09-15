@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Respuesta Incorrecta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="ion-text-center ion-padding-vertical">
+    <img src="../../../assets/icon/incorrecto.png" alt="">
+    <ion-card-content>
+      <ion-card-title *ngIf="usuario">
+      </ion-card-title>
+      <h1>Tu Respuesta es Incorrecta <br>
+      intentalo nuevamente</h1>
+    </ion-card-content>
+
+    <ion-button color="warning" (click)="volverAlInicio()"  shape="round">
+      Volver Al Inicio
+    </ion-button>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer style="margin: 10xp ;">
+  <ion-toolbar color="dark">
+    <ion-footer >
+
+    </ion-footer>
+  </ion-toolbar>
+</ion-footer>
+
